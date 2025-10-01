@@ -1,0 +1,403 @@
+body{
+    background-color:forestgreen;
+   }
+
+
+h1{
+    color:Aquamarine;
+}
+
+
+img{
+    width:450px;
+}
+
+
+img.profilepic:hover{
+
+    animation:enlarge forwards 2s;
+}
+
+
+img.macandchees:hover{
+    animation:brighten forwards 2s;
+}
+
+
+img.cornbeefcassarole:hover{
+    animation:greyed forwards 2s;
+}
+
+
+img.link:hover{
+     animation:inverted forwards 2s;
+}
+
+
+img.sonic:hover{
+     animation:inverted forwards 2s;
+}
+
+
+@keyframes enlarge{
+    from{
+        width:450px;
+    }
+    to{
+        width:850px;
+    }
+}
+
+
+@keyframes brighten{
+    from{
+        filter:brightness(0.8);
+    }
+    to{
+        filter:brightness(1.2);
+    }
+}
+
+
+@keyframes greyed{
+    from{
+        filter:grayscale(0%);
+    }
+    to{
+        filter:grayscale(100%);
+    }
+}
+
+
+@keyframes inverted{
+    from{
+        filter:invert(0%);
+    }
+    to{
+        filter:invert(100%);
+    }
+}
+
+a.links{
+    color:orange;
+}
+
+
+li{
+
+  display:inline;
+ 
+}
+
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    display: block;
+}
+
+header nav ul li a {
+    display: block;
+    color: red;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+header nav ul li a:hover {
+    background-color: aquamarine;
+}
+
+/* ==================== work experience ==================*/
+
+#myworkexperience {
+    background-image:url(../img/4-Ways-to-gain-job-experience.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: table;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.experience-text {
+    display: table-cell;
+    color: white;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+/* ========================= contact =================*/
+
+.container-contact-outer {
+    background-image: url(../img/godafoss-1840758_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.container-contact {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 5% 0;
+    color: red;
+}
+
+.vertical-hr hr {
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%, 100);
+    height: 40vh;
+    width: 1px;
+}
+
+.vertical-hr {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form .name-first {
+    grid-area: fname;
+}
+
+.contact-form .name-last {
+    grid-area: lname;
+}
+
+.contact-form .email {
+    grid-area: email;
+}
+
+.contact-form .phone {
+    grid-area: phone;
+}
+
+.contact-form .message {
+    grid-area: message;
+}
+
+.contact-form .button {
+    grid-area: button;
+}
+
+.contact-form {
+    display: grid;
+    justify-items: center;
+    justify-content: left;
+    grid-template-areas: 
+    'fname lname'
+    'email phone'
+    'message message'
+    'button button';
+    grid-gap: 30px;
+}
+
+.contact-form input {
+    background: transparent;
+    color: red;
+    border: none;
+    border-bottom: 2px solid red;
+    min-width: 250px;
+    height: 50px;
+}
+
+.contact-form textarea {
+    background: transparent;
+    color: red;
+    border: none;
+    border-bottom: 2px solid red;
+    min-width: 550px;
+    height: 150px;
+}
+
+.contact-form ::placeholder {
+    color: red;
+    padding-bottom: 10px;
+}
+
+.contact-form button {
+    height: 30px;
+    width: 200px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.contact-form button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: red;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+/* ==================== Education ================*/
+
+#education {
+    background-image:url(../img/Coding-vs-programming.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    display: table;
+    height: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.education-text {
+    display: table-cell;
+    color: white;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+/* ==================== For People Who are highering ================ */
+
+#myeducation {
+    width: 75%;
+    margin: 50px auto;
+}
+
+#myeducation h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* ================== programming languages i have learned =============== */
+
+#languages {
+    background-image: url(../img/download.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.languages-header {
+    text-align: center;
+    background-color:#424949;
+    height: 60px;
+    width: 100%;
+    margin: 0px;
+    display: table;
+    vertical-align: middle;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-box {
+    border: solid;
+    border-color: #3b5998;
+    background-color: rgba(44, 66, 80, 0.5);
+    height: 400px;
+    width: 325px;
+    margin: auto;
+    border-radius: 3px;
+}
+.icon-box {
+    display: table;
+    margin: 50px auto; 
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.icon-box i {
+    display: table-cell;
+    margin: auto;
+    font-size: 150px;
+    text-align: center;
+    vertical-align: middle;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+#languages figcaption {
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: -80px 0 0 -160px;
+    font-size: 30px;
+    color: white;
+}
+
+.html {
+    background-color: #e34f26;
+
+}
+
+.css {
+    background-color: #3b5998;
+}
+
+.js {
+    background-color: #f7df1e;
+}
+.mobile {
+background-color: #a4c639;
+}
+
+.menu-box p {
+    margin: 60px 10px 0px 10px;
+    color: white;
+}
+
+/* ================ Call to action =============== */
+
+#action {
+    text-align: center;
+}
+
+#action h2 {
+    padding: 90px 0px 25px 0px;
+}
+
+#action button {
+    background-color: #3b5998;
+    border: none;
+    padding: 15px 100px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 30px auto 60px auto;
+    color: white;
+    font-family: 'Orbitron, sans-serif';
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#action button:hover {
+    background-color: #424949;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.25), 0 17px 50px 0 rgba(0, 0, 0, 0.20);
+}
